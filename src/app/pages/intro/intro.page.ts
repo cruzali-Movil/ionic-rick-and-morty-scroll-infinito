@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-intro',
@@ -13,11 +13,12 @@ import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/stan
 })
 export class IntroPage implements OnInit {
 
-  constructor() { }
-
+  constructor(private router: Router ) { }
 
   ngOnInit() {
-    setTimeout
+    setTimeout(() => {
+      this.router.navigateByUrl('/home')
+    }, 1800);
   }
 
 }
