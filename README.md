@@ -27,6 +27,7 @@ https://www.youtube.com/watch?v=jglu2zOrBZI&ab_channel=YorchDev
   (https://capacitorjs.com/docs/guides/splash-screens-and-icons)
   npx capacitor-assets generate
 
+#Carpeta assets en el raiz
 
 iconos generados para ios:
   ios/App/App/Assets.xcassets/Splash.imageset
