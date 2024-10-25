@@ -15,3 +15,24 @@ ion-avatar
   font-size: 1.5em;
   font-weight: bold;
 }
+
+ion-searchbar
+{
+  --background: rgba(7,7,7,0.2);
+  max-width: 350px;
+  color: white;
+}
+
+ion-card:hover
+{
+  cursor: pointer;
+  background: rgba(7,7,7,0.485);
+
+}
+
+.d-flex-center
+{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}

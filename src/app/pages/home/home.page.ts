@@ -35,7 +35,7 @@ export class HomePage implements OnInit {
       next: (res: any) => {
         // spreed operator
         this.characters.push(...res.results);
-        console.log(this.characters);
+        //console.log(this.characters);
 
         if (event)
           {
@@ -49,5 +49,21 @@ export class HomePage implements OnInit {
     });
 
   }
+
+
+  searchCharacters()
+  {
+    this.params.page = 1;
+
+    this.rickAndMortySvc.getCharacter(this.params).subscribe({
+      next: (res: any) => {
+        this.characters = res.results;
+      },
+      error: (error: any) => {
+
+      }
+    })
+  }
+
 
 }
