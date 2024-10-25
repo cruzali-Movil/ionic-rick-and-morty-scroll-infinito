@@ -23,8 +23,9 @@ https://www.youtube.com/watch?v=jglu2zOrBZI&ab_channel=YorchDev
 
 
 #Iconos
-  npm install @capacitor/assets --save-dev
+  npm install @capacitor/assets
   (https://capacitorjs.com/docs/guides/splash-screens-and-icons)
+  npx capacitor-assets generate
 
 
 iconos generados para ios:
